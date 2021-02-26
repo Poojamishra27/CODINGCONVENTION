@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Employee {
+    int id;
+    double salary=0.0;
+
+    public void getInput(){
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter empid:");
+        int empid = in.nextInt();
+        System.out.println("Enter salary:");
+        Double salary = in.nextDouble();
+    }
+
+
+    public void display(){
+
+        int empid = 0;
+        System.out.println("Employee id =" + empid);
+        System.out.println("Employee salary =" + salary);
+    }
+    double calTax(){
+        if(this.salary>=500000 && this.salary < 1000000)
+            return this.salary*0.1;
+
+
+        if(this.salary>1000000.00 && this.salary < 1500000)
+            return this.salary*0.2;
+
+        else
+            return this.salary*0.3;
+
+    }
+    public double main(String[] args) {
+
+            if(this.salary>=500000 && this.salary < 1000000)
+                return this.salary*0.1;
+
+
+            if(this.salary>1000000.00 && this.salary < 1500000)
+                return this.salary*0.2;
+
+            else
+                return this.salary*0.3;
+
+        }
+
+
+    public Employee(int Id,double salary) {
+        this.id = id;
+        this.salary = salary;
+    }
+
+   
+}
+
